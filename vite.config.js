@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://automa.web.nemer.tec.br',
+        target: 'https://webhookn8n.sofiatec.com.br/webhook',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '/webhook')
       }
